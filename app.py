@@ -48,6 +48,8 @@ if "articles" not in st.session_state:
     st.session_state.articles = []
 if "last_save_time" not in st.session_state:
     st.session_state.last_save_time = 0
+if "go_to_export" not in st.session_state:
+    st.session_state.go_to_export = False
 
 settings = st.session_state.settings
 exporter = Exporter("output")
@@ -119,6 +121,25 @@ tab_input, tab_results, tab_export = st.tabs(
     ["Input Berita", "Hasil Analisis", "Export"]
 )
 
+if st.session_state.go_to_export:
+    st.session_state.go_to_export = False
+    components.html(
+        """
+        <script>
+        setTimeout(() => {
+            const tabs = Array.from(
+                window.parent.document.querySelectorAll('button[role="tab"]')
+            );
+            const exportTab = tabs.find((tab) => tab.innerText.trim() === "Export");
+            if (exportTab) {
+                exportTab.click();
+            }
+        }, 150);
+        </script>
+        """,
+        height=0,
+    )
+
 
 # ── helpers ────────────────────────────────────────────────────
 def _run_analysis(texts: list[str], sources: list[str] | None = None):
@@ -163,6 +184,7 @@ def _run_analysis(texts: list[str], sources: list[str] | None = None):
         f"Selesai! Valid: {valid} | Review: {review} | Reject: {reject} | Tersimpan di output/"
     )
     time.sleep(0.5)
+    st.session_state.go_to_export = True
     st.rerun()
 
 
@@ -201,6 +223,7 @@ def _run_bulk_analysis(text: str):
         f"Selesai! Valid: {valid} | Review: {review} | Reject: {reject} | Tersimpan di output/"
     )
     time.sleep(0.5)
+    st.session_state.go_to_export = True
     st.rerun()
 
 
