@@ -582,12 +582,13 @@ with tab_export:
     articles = st.session_state.articles
 
     if articles:
-        st.subheader("Export Data")
+        st.subheader("Export DNA")
 
         col_left, col_right = st.columns(2)
 
         with col_left:
-            st.markdown("**Format Tersedia**")
+            st.markdown("**File .dna**")
+            st.caption("Format utama untuk dibuka langsung di Discourse Network Analyzer.")
 
             export_filter = st.selectbox(
                 "Export status",
@@ -613,57 +614,6 @@ with tab_export:
                         filtered.append(fa)
                 return filtered
 
-            if st.button("Export CSV", use_container_width=True):
-                exp_articles = _get_export_articles()
-                path = exporter.export_csv(exp_articles)
-                st.success(f"Tersimpan: {path}")
-                csv_data = exporter.statements_to_dataframe(exp_articles).to_csv(
-                    index=False, encoding="utf-8-sig"
-                )
-                st.download_button(
-                    "Download CSV", csv_data, "autodna_export.csv", "text/csv"
-                )
-
-            if st.button("Export Excel", use_container_width=True):
-                exp_articles = _get_export_articles()
-                path = exporter.export_xlsx(exp_articles)
-                st.success(f"Tersimpan: {path}")
-                with open(path, "rb") as f:
-                    st.download_button(
-                        "Download Excel",
-                        f.read(),
-                        "autodna_export.xlsx",
-                        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-                    )
-
-            if st.button("Export GraphML", use_container_width=True):
-                try:
-                    exp_articles = _get_export_articles()
-                    path = exporter.export_graphml(exp_articles)
-                    st.success(f"Tersimpan: {path}")
-                    with open(path, "r", encoding="utf-8") as f:
-                        st.download_button(
-                            "Download GraphML",
-                            f.read(),
-                            "autodna_network.graphml",
-                        )
-                except ImportError as e:
-                    st.error(str(e))
-
-            if st.button("Export JSON", use_container_width=True):
-                exp_articles = _get_export_articles()
-                path = exporter.export_json(exp_articles)
-                st.success(f"Tersimpan: {path}")
-                with open(path, "r", encoding="utf-8") as f:
-                    st.download_button(
-                        "Download JSON",
-                        f.read(),
-                        "autodna_project.json",
-                        "application/json",
-                    )
-
-            st.divider()
-            st.markdown("**DNA Format**")
             dna_filename = st.text_input(
                 "Nama file .dna",
                 value="autodna_export.dna",
