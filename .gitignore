@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+*.log
+.deps_installed
+
+# Local/generated data
+autosave/
+exports/
+output/
+projects/
+Input/
+input/
+
+# Local tools and downloaded binaries
+tools/
+*.jar
+open_dna_3_1_0.bat
+
+# Local/editor/OS files
+.impeccable/
+.streamlit/secrets.toml
+.env
+.venv/
+venv/
+Thumbs.db
+.DS_Store
