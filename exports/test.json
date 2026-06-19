@@ -1,0 +1,68 @@
+{
+  "version": "1.0",
+  "created": "2026-06-20T00:55:28.284200",
+  "articles": [
+    {
+      "title": "Kebijakan Energi Terbarukan di Indonesia",
+      "date": "20 Juni 2026",
+      "author": "Ahmad Faisal\n\nPemerintah Indonesia berencana mempercepat transisi energi terbarukan",
+      "source": "",
+      "paragraphs": [
+        "Kebijakan Energi Terbarukan di Indonesia",
+        "20 Juni 2026",
+        "Reporter: Ahmad Faisal",
+        "Pemerintah Indonesia berencana mempercepat transisi energi terbarukan. Kebijakan ini mendapat berbagai respons dari berbagai pihak.",
+        "\"Kita harus segera beralih ke energi bersih untuk masa depan Indonesia,\" kata Bahlil Lahadalia. Menteri ESDM ini menegaskan pentingnya investasi di sektor EBT.",
+        "\"Target 23 persen bauran energi terbarukan pada 2025 sangat ambisius tapi bisa dicapai,\" ujar Hanif Faisol Nurofiq, Direktur Jenderal EBTKE Kementerian ESDM.",
+        "Sementara itu, organisasi lingkungan Greenpeace mengkritik lambatnya progres. \"Pemerintah terlalu lambat dalam mengurangi ketergantungan pada batu bara,\" jelas Bondan Andriyanu dari Greenpeace Indonesia.",
+        "Walhi juga menyuarakan kekhawatiran serupa. \"Deforestasi untuk proyek energi tidak boleh terjadi,\" menurut Wahyu Perdana, Koordinator Walhi Nasional."
+      ],
+      "statements": [
+        {
+          "article_index": 0,
+          "paragraph_index": 4,
+          "quote": "Kita harus segera beralih ke energi bersih untuk masa depan Indonesia,",
+          "actor": "Bahlil Lahadalia",
+          "organization": "",
+          "concept": "Energi",
+          "agreement": "Agreement",
+          "confidence": 0.9,
+          "validated": false
+        },
+        {
+          "article_index": 0,
+          "paragraph_index": 5,
+          "quote": "Target 23 persen bauran energi terbarukan pada 2025 sangat ambisius tapi bisa dicapai,",
+          "actor": "Hanif Faisol Nurofiq",
+          "organization": "Kementerian ESDM",
+          "concept": "Energi",
+          "agreement": "Agreement",
+          "confidence": 1.0,
+          "validated": false
+        },
+        {
+          "article_index": 0,
+          "paragraph_index": 6,
+          "quote": "Pemerintah terlalu lambat dalam mengurangi ketergantungan pada batu bara,",
+          "actor": "Bondan Andriyanu dari Greenpeace Indonesia",
+          "organization": "Greenpeace",
+          "concept": "Politik",
+          "agreement": "Agreement",
+          "confidence": 1.0,
+          "validated": false
+        },
+        {
+          "article_index": 0,
+          "paragraph_index": 7,
+          "quote": "Deforestasi untuk proyek energi tidak boleh terjadi,",
+          "actor": "Wahyu Perdana",
+          "organization": "WALHI",
+          "concept": "Lingkungan",
+          "agreement": "Disagreement",
+          "confidence": 1.0,
+          "validated": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "created": "2026-06-20T02:50:27.843655",
+  "articles": [
+    {
+      "title": "MALANG, KOMPAS.TV - Gunung Semeru kembali mengalami erupsi pada Rabu pagi.",
+      "date": "",
+      "author": "",
+      "source": "",
+      "paragraphs": [
+        "MALANG, KOMPAS.TV - Gunung Semeru kembali mengalami erupsi pada Rabu pagi.",
+        "Petugas Pos Pengamatan Gunung Semeru, Liswanto mengatakan, erupsi pertama terjadi pada pukul 05.07 WIB.",
+        "\"Terjadi erupsi Gunung Semeru pada hari Rabu dengan tinggi kolom letusan teramati sekitar 400 meter di atas puncak,\" kata Liswanto.",
+        "Ia menjelaskan, aktivitas erupsi masih berlangsung dan warga diminta menjauh dari area berbahaya."
+      ],
+      "statements": [
+        {
+          "article_index": 0,
+          "paragraph_index": 2,
+          "quote": "Terjadi erupsi Gunung Semeru pada hari Rabu dengan tinggi kolom letusan teramati sekitar 400 meter di atas puncak,",
+          "actor": "Liswanto",
+          "organization": "",
+          "role": "",
+          "concept": "Umum",
+          "stance": "netral",
+          "confidence": 0.8,
+          "status": "valid",
+          "validated": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d3" for="edge" attr.name="agreement" attr.type="string"/>
+<key id="d2" for="edge" attr.name="weight" attr.type="long"/>
+<key id="d1" for="node" attr.name="organization" attr.type="string"/>
+<key id="d0" for="node" attr.name="node_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="Bahlil Lahadalia">
+  <data key="d0">actor</data>
+  <data key="d1"></data>
+</node>
+<node id="Energi">
+  <data key="d0">concept</data>
+</node>
+<node id="Hanif Faisol Nurofiq">
+  <data key="d0">actor</data>
+  <data key="d1">Kementerian ESDM</data>
+</node>
+<node id="Bondan Andriyanu dari Greenpeace Indonesia">
+  <data key="d0">actor</data>
+  <data key="d1">Greenpeace</data>
+</node>
+<node id="Politik">
+  <data key="d0">concept</data>
+</node>
+<node id="Wahyu Perdana">
+  <data key="d0">actor</data>
+  <data key="d1">WALHI</data>
+</node>
+<node id="Lingkungan">
+  <data key="d0">concept</data>
+</node>
+<edge source="Bahlil Lahadalia" target="Energi">
+  <data key="d2">1</data>
+  <data key="d3">Agreement</data>
+</edge>
+<edge source="Energi" target="Hanif Faisol Nurofiq">
+  <data key="d2">1</data>
+  <data key="d3">Agreement</data>
+</edge>
+<edge source="Bondan Andriyanu dari Greenpeace Indonesia" target="Politik">
+  <data key="d2">1</data>
+  <data key="d3">Agreement</data>
+</edge>
+<edge source="Wahyu Perdana" target="Lingkungan">
+  <data key="d2">1</data>
+  <data key="d3">Disagreement</data>
+</edge>
+</graph></graphml>
